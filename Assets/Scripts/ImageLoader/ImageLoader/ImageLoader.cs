@@ -22,7 +22,7 @@ namespace ImageLoader {
         private void Start() {
             
             // Carga de la imagen .dcm (DICOM)
-            var image = new DicomImage(@"1.dcm");
+            var image = new DicomImage(@"TestImages/leftFoot.dcm");
 
             Texture2D slice = image.RenderImage().AsTexture2D();
             imaXMin.texture = slice; 
